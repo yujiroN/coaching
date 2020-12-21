@@ -1,0 +1,61 @@
+.contact {
+    text-align: center;
+    padding: 100px 0;
+    @include sp {
+        display: none;
+        padding: 50px 0;
+    }
+    .contact__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        @include tab {
+            padding: 0 20px;
+        }
+        .contact__title {
+            padding-bottom: 80px;
+            @include sp {
+                padding-bottom: 40px;
+            }
+            h2 {
+                font-size: 4rem;
+                letter-spacing: 0.1em;
+                @include sp {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .contact__text {
+            margin-bottom: 50px;
+            p {
+                font-size: 2rem;
+                letter-spacing: 0.05em;
+                line-height: 1.8;
+                @include sp {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .contact__btn {
+            a {
+                display: inline-block;
+                border: 1px solid black;
+                color: black;
+                padding: 25px 80px;
+                font-size: 1.8rem;
+                position: relative;
+                &::before {
+                    content: "\f105";
+                    font-weight: 600;
+                    font-family: "Font Awesome 5 Free";
+                    position: absolute;
+                    right: 30px;
+                }
+                &:hover {
+                    background-color: black;
+                    color: #fff;
+                    transition: background-color .5s;
+                }
+            }
+        }
+    }
+}

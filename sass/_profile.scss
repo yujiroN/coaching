@@ -1,0 +1,121 @@
+.profile {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #FFCC66;
+    @include sp {
+        padding: 50px 0;
+    }
+    .profile__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        @include tab {
+            padding: 0 20px;
+        }
+        .profile__title {
+            padding-bottom: 80px;
+            @include sp {
+                padding-bottom: 40px;
+            }
+            h2 {
+                font-size: 4rem;
+                letter-spacing: 0.1em;
+                @include sp {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .profile__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include sp {
+                flex-direction: column;
+                margin: 0 auto;
+            }
+            .profile__item__image {
+                flex-basis: 46%;
+                @include sp {
+                    margin-bottom: 30px;
+                }
+            }
+            .profile__item__text {
+                flex-basis: 46%;
+                text-align: left;
+                h3 {
+                    font-size: 3rem;
+                    letter-spacing: 0.1rem;
+                    padding-bottom: 20px;
+                    @include sp {
+                        text-align: center;
+                        font-size: 1.8rem;
+                    }
+                }
+                p {
+                    font-size: 1.6rem;
+                    line-height: 1.8;
+                    letter-spacing: 0.05em;
+                    margin-bottom: 30px;
+                    @include sp {
+                        font-size: 1.4rem;
+                    }
+                }
+                .profile__item__text__btns {
+                    display: flex;
+                    .profile__item__text__btn__twitter {
+                        a {
+                            display: inline-block;
+                            height: 40px;
+                            width: 40px;
+                            background-color: black;
+                            text-align: center;
+                            line-height: 40px;
+                            color: #fff;
+                            font-size: 2rem;
+                            border-radius: 50%;
+                            &:hover {
+                                opacity: 0.5;
+                                transition: opacity .5s;
+                            }
+                        }
+                    }
+                    .profile__item__text__btn__insta {
+                        margin-left: 25px;
+                        a {
+                            display: inline-block;
+                            height: 40px;
+                            width: 40px;
+                            background-color: black;
+                            text-align: center;
+                            line-height: 40px;
+                            color: #fff;
+                            font-size: 2rem;
+                            border-radius: 50%;
+                            &:hover {
+                                opacity: 0.5;
+                                transition: opacity .5s;
+                            }
+                        }
+                    }
+                    .profile__item__text__btn__note {
+                        margin-left: 25px;
+                        a {
+                            display: inline-block;
+                            height: 40px;
+                            width: 40px;
+                            background-color: black;
+                            text-align: center;
+                            line-height: 40px;
+                            color: #fff;
+                            font-size: 2rem;
+                            border-radius: 50%;
+                            &:hover {
+                                opacity: 0.5;
+                                transition: opacity .5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

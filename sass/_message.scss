@@ -1,0 +1,56 @@
+.message {
+    padding: 100px 0;
+    background-image: url(../image/profile/message-min.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    @include tab {
+        background-position: 80% 50%;
+    }
+    @include sp {
+        padding: 50px 0;
+        background-position: 80% 50%;
+    }
+    .message__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        @include tab {
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+        .message__title {
+            padding-bottom: 80px;
+            @include sp {
+                padding-bottom: 40px;
+            }
+            h2 {
+                font-size: 4rem;
+                letter-spacing: 0.1em;
+                @include sp {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .message__text {
+            p {
+                font-size: 2rem;
+                letter-spacing: 0.05em;
+                padding-bottom: 30px;
+                line-height: 2.5;
+                @include sp {
+                    font-size: 1.5rem;
+                    line-height: 2;
+                }
+            }
+        }
+        
+    }
+}
+
+.br-sp {
+    @include sp {
+        display: none;
+    }
+}
